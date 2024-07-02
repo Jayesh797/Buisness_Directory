@@ -1,12 +1,17 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import { Colors } from './../../constants/Colors';
 import { Tabs } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
+// import { Colors } from 'react-native/Libraries/NewAppScreen';
 export default function TabLayout() {
     return (
-        <Tabs screenOptions={{ headerShown: false }}>
+        <Tabs screenOptions={{ 
+            headerShown: false ,
+            tabBarActiveTintColor:Colors.primary
+            }}>
             <Tabs.Screen
                 name="home"
                 options={{
